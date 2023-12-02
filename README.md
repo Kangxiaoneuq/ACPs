@@ -1,25 +1,22 @@
-## CNRBind
+## ACPs
 
-A prediction method by fusing RNA sequence and structure information to identify small molecule-RNA binding sites. 
+Improving identification of anticancer peptides based on peptide residue composition and physiochemical properties information 
 
-The RNA id, sequence and labels can be found in ./data_cache.
-The codes for CNRBind are available in ./predict.
-The predicted ASA can be found in ./ASA.
-The PDB files are saved in ./pdb.
-The predicted PDB files are saved in ./predicted_pdb.
+The peptides sequence and labels can be found in ./data_cache.
+The codes are available in ./src.
 
-Testing each RNA takes approximately 10 seconds, depending on the sequence length.
-
-### Test the model on TE18 (~3min)
+### Test the model on test set
 
 ```bash
 cd ./predict/
-python predict.py TE18
+python predict.py Test
 ```
-### Test the model on RB9 (~3min)
+### Test the model on a new test set
+Put the sequence to be detected into the ACP20mainNew.fasta file in fasta format.
+Then, run the code below, which will generate predicted probabilities.
 ```bash
 cd ./predict/
-python predict.py RB9
+python predict.py New
 ```
 ### contact
 Kang Xiao: xiaokangneuq@163.com
