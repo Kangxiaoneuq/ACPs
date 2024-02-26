@@ -1,4 +1,4 @@
-# Effective identification and differential analysis of anticancer peptides
+### Effective identification and differential analysis of anticancer peptides
 
 The peptides sequence and labels can be found in .fasta type files
 The codes are available in predict.py
